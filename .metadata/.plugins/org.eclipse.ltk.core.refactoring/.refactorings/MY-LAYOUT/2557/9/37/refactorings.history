@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;R.java&apos; to &apos;Resume_55410559/gen/com.example.resume_55410559&apos;&#x0D;&#x0A;- Original project: &apos;MY-LAYOUT&apos;&#x0D;&#x0A;- Destination element: &apos;Resume_55410559/gen/com.example.resume_55410559&apos;&#x0D;&#x0A;- Original element: &apos;app.buusk.my_layout.R.java&apos;" description="Copy compilation unit" destination="=Resume_55410559/gen&lt;com.example.resume_55410559" element1="/gen&lt;app.buusk.my_layout{R.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1410265086598" units="1" version="1.0"/>
+</session>

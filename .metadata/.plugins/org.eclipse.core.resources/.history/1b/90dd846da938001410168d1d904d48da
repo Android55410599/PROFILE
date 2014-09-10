@@ -1,0 +1,77 @@
+package com.example.resume_55410559;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+//import android.widget.TextView;
+
+public class resume extends Activity{
+	
+	private Button Button_Edit;
+	EditText et1, et2, et3, et4, et5, et6, et7;
+	String txt1, txt2, txt3, txt4, txt5, txt6, txt7;
+	
+	 @Override
+	    protected void onCreate(Bundle savedInstanceState) {
+	        super.onCreate(savedInstanceState);
+	        setContentView(R.layout.resume);
+	        
+	        et1 = (EditText) findViewById(R.id.editText1);
+			et2 = (EditText) findViewById(R.id.editText2);
+			et3 = (EditText) findViewById(R.id.editText3);
+			et4 = (EditText) findViewById(R.id.editText4);
+			et5 = (EditText) findViewById(R.id.editText5);
+			et6 = (EditText) findViewById(R.id.editText6);
+			et7 = (EditText) findViewById(R.id.editText7);   
+			
+	        Button_Edit = (Button) findViewById(R.id.button_save);
+	        
+	        /*txt1 = (TextView) findViewById(R.id.textView4);
+			txt2 = (TextView) findViewById(R.id.textView6);
+			txt3 = (TextView) findViewById(R.id.textView8);
+			txt4 = (TextView) findViewById(R.id.textView10);
+			txt5 = (TextView) findViewById(R.id.textView12);
+			txt6 = (TextView) findViewById(R.id.textView14);
+			txt7 = (TextView) findViewById(R.id.textView16);*/
+	        
+	        Button_Edit.setOnClickListener(new OnClickListener() {
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					txt1 = (et1.getText().toString());
+					txt2 = (et2.getText().toString());
+					txt3 = (et3.getText().toString());
+					txt4 = (et4.getText().toString());
+					txt5 = (et5.getText().toString());
+					txt6 = (et6.getText().toString());
+					
+					/*txt1.setText(et1.getText().toString());
+					txt2.setText(et2.getText().toString());
+					txt3.setText(et3.getText().toString());
+					txt4.setText(et4.getText().toString());
+					txt5.setText(et5.getText().toString());
+					txt6.setText(et6.getText().toString());
+					txt7.setText(et7.getText().toString());*/
+					
+					Intent k = new Intent(getApplicationContext(), MainActivity.class);
+					k.putExtra("txt11", txt1);
+					k.putExtra("txt22", txt2);
+					k.putExtra("txt33", txt3);
+					k.putExtra("txt44", txt4);
+					k.putExtra("txt55", txt5);
+					k.putExtra("txt66", txt6);
+					k.putExtra("txt77", txt7);
+					startActivity(k);
+					
+					/*Intent i = new Intent(getApplicationContext(), MainActivity.class);
+					startActivity(i);*/
+				}
+			});
+	 }    
+}
+

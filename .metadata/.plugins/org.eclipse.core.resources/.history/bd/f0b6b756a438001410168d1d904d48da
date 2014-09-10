@@ -1,0 +1,24 @@
+package app.buusk15.sqlite_599;
+
+import android.support.v7.app.ActionBarActivity;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+public class MainActivity extends ActionBarActivity {
+
+	SQLiteDatabase db;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		control599DB control599db = new control599DB(this);
+		control599db.getWritableDatabase();
+		
+		
+		
+		
+	}
+}

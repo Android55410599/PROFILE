@@ -1,0 +1,45 @@
+package com.example.resume_55410559;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class resume extends Activity{
+	
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.resume);
+	}
+		
+	btn2.setOnClickListener(new OnClickListener() {	
+		@Override
+		public void onClick(View v) {
+			// TODO Auto-generated method stub
+			String name = et1.getText().toString();
+			String age = et2.getText().toString();
+			String nickname = et3.getText().toString();
+			String major = et4.getText().toString();
+			String faculty = et5.getText().toString();
+			String grade = et6.getText().toString();
+			String university = et7.getText().toString();
+			
+			TextView et1 = (TextView) findViewById(R.id.textView4);
+			TextView et2 = (TextView) findViewById(R.id.textView6);
+			TextView et3 = (TextView) findViewById(R.id.textView8);
+			TextView et4 = (TextView) findViewById(R.id.textView10);
+			TextView et5 = (TextView) findViewById(R.id.textView12);
+			TextView et6 = (TextView) findViewById(R.id.textView14);
+			TextView et7 = (TextView) findViewById(R.id.textView16);
+			
+			et1.setText(name);
+			et2.setText(age);
+			et3.setText(nickname);
+			et4.setText(major);
+			et5.setText(faculty);
+			et6.setText(grade);
+			et7.setText(university);
+		}
+	});
+}
+}
+

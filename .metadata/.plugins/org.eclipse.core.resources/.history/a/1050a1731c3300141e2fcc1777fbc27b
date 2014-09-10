@@ -1,0 +1,23 @@
+package com.example.listview_55410599;
+
+import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+
+public class MainActivity extends ActionBarActivity {
+	private ListView listview1;
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		listview1 = (ListView) findViewById(R.id.listView1);
+		
+	}//End OnCreate
+	
+	private class Myadapter extends BaseAdapter {
+		
+	}
+	
+}//End Class

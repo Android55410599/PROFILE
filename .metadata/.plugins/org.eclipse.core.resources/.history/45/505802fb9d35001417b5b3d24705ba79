@@ -1,0 +1,19 @@
+package com.example.resume_55410559;
+
+public class data {
+	private static String name = "";
+	public static String age = "";
+	public static String nickname = "";
+	public static String major = "";
+	public static String faculty = "";
+	public static String grade = "";
+	public static String university = "";
+
+	public static String getName() {
+		return name;
+	}
+
+	public static void setName(String name) {
+		data.name = name;
+	}
+}

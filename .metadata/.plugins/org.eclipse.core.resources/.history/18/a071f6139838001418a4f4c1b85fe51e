@@ -1,0 +1,32 @@
+package app.buusk15.sqlite_599;
+
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.database.sqlite.SQLiteOpenHelper;
+
+public class control599DB extends SQLiteOpenHelper   { //SQLiteOpenHelper จัดการการสร้างและเปิด database
+
+	private static final String DATABASE_NAME = "mydata316";
+	private static final String TABLE_NAME = "members";
+	private static final int DATABASE_VERSION = 1;
+	
+	public control599DB(Context context) {
+		super(context, DATABASE_NAME, null, DATABASE_VERSION); //factory เป็นชื่อบริษัท
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		// TODO Auto-generated method stub
+		db.execSQL("CREATE TABLE" + TABLE_NAME + "(MemberID INTEGER PRIMARY KEY AUTOINCREMENT)"); //คำสั่ง SQL CREATE TABLE  + ตามด้วยชื่อ  table  xxxx  + (ชื่อฟีว) 
+		
+	}
+
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
